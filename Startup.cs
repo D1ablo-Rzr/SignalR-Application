@@ -21,7 +21,7 @@ namespace FileUpload
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddSignalR().AddNCache("democache", "appkey");
+            services.AddSignalR().AddNCache("ClusteredCache", "appkey");
             //services.AddSignalR();
         }
 

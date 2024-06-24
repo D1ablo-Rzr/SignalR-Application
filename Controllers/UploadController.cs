@@ -12,7 +12,7 @@ namespace FileUpload.Controllers
 {
     public class UploadController : Controller
     {
-        private static ICache _cache = CacheManager.GetCache("democache");
+        private static ICache _cache = CacheManager.GetCache("ClusteredCache");
         private readonly IHubContext<BroadCastHub> hubContext;
         public UploadController(IHubContext<BroadCastHub> _hubContext)
         {
